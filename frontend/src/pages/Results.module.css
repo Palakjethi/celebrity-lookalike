@@ -1,0 +1,240 @@
+.page {
+  min-height: 100vh;
+  background: #150800;
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  align-self: flex-start;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: #9A6A55;
+  background: transparent;
+  border: 1px solid #4A2010;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: all 0.2s;
+}
+
+.back:hover { border-color: #C4502A; color: #FFF0E8; }
+
+.hero { width: 100%; max-width: 860px; }
+
+.heroTitle {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #FFF0E8;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.photoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #2A1005;
+}
+
+.photoPlaceholder {
+  width: 220px;
+  height: 220px;
+  border-radius: 16px;
+  background: #2A1005;
+  border: 2px solid #3A1A08;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #C4907A;
+}
+
+.matchBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1E0B02;
+  border: 1.5px solid #C4502A;
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+
+.matchScore {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 44px;
+  font-weight: 700;
+  color: #E8693A;
+  line-height: 1;
+}
+
+.matchLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6B3A25;
+  margin-top: 4px;
+}
+
+.breakdown {
+  background: #1A0902;
+  border: 1px solid #2A1005;
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+}
+
+.breakdownTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6B3A25;
+  margin-bottom: 20px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.barLabel {
+  font-size: 13px;
+  color: #9A6A55;
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.barTrack {
+  flex: 1;
+  height: 6px;
+  background: #2A1005;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: #C4502A;
+  border-radius: 999px;
+  transition: width 1s ease;
+}
+
+.barVal {
+  font-size: 13px;
+  font-weight: 500;
+  color: #FFF0E8;
+  width: 36px;
+  text-align: right;
+}
+
+.runners { margin-bottom: 32px; }
+
+.runnersTitle {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #6B3A25;
+  margin-bottom: 16px;
+}
+
+.runnerCards {
+  display: flex;
+  gap: 16px;
+}
+
+.runnerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: #1A0902;
+  border: 1px solid #2A1005;
+  border-radius: 12px;
+  padding: 16px;
+  flex: 1;
+}
+
+.runnerPhoto {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.runnerPhotoEmpty {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  background: #2A1005;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.runnerName {
+  font-size: 13px;
+  font-weight: 500;
+  color: #C4907A;
+  text-align: center;
+}
+
+.runnerScore {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #E8693A;
+}
+
+.shareRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.shareBtn {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  background: transparent;
+  color: #C4907A;
+  border: 1px solid #4A2010;
+  transition: all 0.2s;
+}
+
+.shareBtn:hover {
+  background: #C4502A;
+  color: #FFF0E8;
+  border-color: #C4502A;
+}

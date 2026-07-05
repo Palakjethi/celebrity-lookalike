@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,700;1,500&family=DM+Sans:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'Ballmain';
+  src: url('./fonts/ballmain.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #150800;
+  color: #FFF0E8;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #150800; }
+::-webkit-scrollbar-thumb { background: #4A2010; border-radius: 3px; }
