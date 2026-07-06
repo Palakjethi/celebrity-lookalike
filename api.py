@@ -1,4 +1,7 @@
 import os
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 import uuid
 import json
 import shutil
@@ -43,7 +46,7 @@ def get_embedding(img_path: str):
     result = DeepFace.represent(
         img_path=img_path,
         model_name="ArcFace",
-        detector_backend="retinaface",
+        detector_backend="opencv",
         enforce_detection=True,
     )
     vec = np.array(result[0]["embedding"], dtype="float32")
