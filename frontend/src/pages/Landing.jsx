@@ -10,7 +10,7 @@ export default function Landing({ filters, setFilters, onResults }) {
   const fileRef = useRef()
 
   useEffect(() => {
-    axios.get("http://localhost:8000/landing-celebs")
+    axios.get("https://celebrity-lookalike-api.onrender.com/landing-celebs")
       .then(res => setLandingCelebs(res.data.celebs))
       .catch(() => {})
   }, [])
@@ -28,7 +28,7 @@ export default function Landing({ filters, setFilters, onResults }) {
     formData.append("gender", filters.gender)
     formData.append("industry", filters.industry)
     try {
-      const res = await axios.post("http://localhost:8000/match", formData)
+      const res = await axios.post("https://celebrity-lookalike-api.onrender.com/match", formData)
       if (res.data.error) {
         setError(res.data.error)
       } else {
