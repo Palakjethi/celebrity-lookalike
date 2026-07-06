@@ -1,0 +1,7 @@
+venv/
+data/celebs/
+data/test_faces/
+__pycache__/
+*.pyc
+.DS_Store
+.env
