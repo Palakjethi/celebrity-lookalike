@@ -44,7 +44,7 @@ export default function Results({ results, userPhoto, onBack }) {
     })
 
     const userImg = await loadImg(userPhoto)
-    const celebImg = top.photo_url ? await loadImg(`https://celebrity-lookalike-api.onrender.com${top.photo_url}`) : null
+    const celebImg = top.photo_url ? await loadImg(top.photo_url) : null
 
     const drawRounded = (img, x, y, w, h, r) => {
       ctx.save()

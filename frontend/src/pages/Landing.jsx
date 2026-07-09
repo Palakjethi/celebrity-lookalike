@@ -10,7 +10,7 @@ export default function Landing({ filters, setFilters, onResults }) {
   const fileRef = useRef()
 
   useEffect(() => {
-    axios.get("https://celebrity-lookalike-api.onrender.com/landing-celebs")
+    axios.get("https://palakjethi-celebrity-lookalike.hf.space/landing-celebs")
       .then(res => setLandingCelebs(res.data.celebs))
       .catch(() => {})
   }, [])
@@ -28,7 +28,7 @@ export default function Landing({ filters, setFilters, onResults }) {
     formData.append("gender", filters.gender)
     formData.append("industry", filters.industry)
     try {
-      const res = await axios.post("https://celebrity-lookalike-api.onrender.com/match", formData)
+      const res = await axios.post("https://palakjethi-celebrity-lookalike.hf.space/match", formData)
       if (res.data.error) {
         setError(res.data.error)
       } else {
