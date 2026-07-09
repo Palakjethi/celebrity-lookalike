@@ -31,7 +31,8 @@
 
 ### Results Page
 
-<img width="1920" height="1080" alt="Screenshot (169)" src="https://github.com/user-attachments/assets/6c4b5db7-add2-4888-bd3b-5b2dcf63cb86" />
+<img width="1920" height="1080" alt="Screenshot (168)" src="https://github.com/user-attachments/assets/af158554-cb67-44af-bd9c-53ab8d704d68" />
+
 <img width="1920" height="1080" alt="Screenshot (169)" src="https://github.com/user-attachments/assets/6682ab38-1ff2-473d-b20c-95b0c4c04ce3" />
 
 
